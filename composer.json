@@ -1,0 +1,7 @@
+{
+    "require": {
+        "laravel/fortify": "^1.30",
+        "doctrine/dbal": "^4.3",
+        "nesbot/carbon": "^3.8"
+    }
+}

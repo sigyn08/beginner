@@ -1,0 +1,13 @@
+/vendor/
+/node_modules/
+/public/storage
+/storage/*.key
+.env
+.phpunit.result.cache
+Homestead.yaml
+Homestead.json
+/docker/mysql/data/
+/docker/mysql/logs/
+/docker/mysql/conf.d/
+/docker/nginx/log/
+/docker/php/log/

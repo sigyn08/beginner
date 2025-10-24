@@ -1,0 +1,61 @@
+/* 全体コンテナ */
+.address-container {
+    max-width: 500px;
+    margin: 80px auto;
+    text-align: center;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* タイトル */
+.address-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* フォーム */
+.address-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 各入力ブロック */
+.form-group {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* ボタン */
+.update-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.update-btn:hover {
+    background-color: #ff4b4b;
+}

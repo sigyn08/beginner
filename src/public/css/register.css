@@ -1,0 +1,88 @@
+/* === ベース設定 === */
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* === コンテナ === */
+.auth-container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+/* === タイトル === */
+.auth-container h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+/* === フォーム === */
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+/* === ラベル === */
+.auth-container label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* === 入力欄 === */
+.auth-container input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+/* === エラーメッセージ === */
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* === 登録ボタン === */
+.btn-submit {
+    background-color: #ff5a5a;
+    color: #fff;
+    padding: 12px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: opacity 0.2s;
+}
+
+.btn-submit:hover {
+    opacity: 0.9;
+}
+
+/* === ログインリンク === */
+.switch-link {
+    margin-top: 15px;
+}
+
+.switch-link a {
+    font-size: 13px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.switch-link a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,144 @@
+/* ===== 基本レイアウト ===== */
+.sell-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.sell-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* ===== 画像アップロードエリア ===== */
+.image-upload-box {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    text-align: center;
+    padding: 40px 20px;
+    cursor: pointer;
+}
+
+.image-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #f88;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.image-label:hover {
+    background: #e66;
+}
+
+/* ===== セクションタイトル ===== */
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 30px 0 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* ===== 入力フォーム共通 ===== */
+select,
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* ===== 出品ボタン ===== */
+.btn-sell {
+    display: block;
+    width: 100%;
+    background: #f66;
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-sell:hover {
+    background: #e55;
+}
+
+/* ===== カテゴリータグエリア ===== */
+.category-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* ラベル（クリック領域） */
+.tag {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* inputを非表示にしてspanを操作対象に */
+.tag input {
+    display: none;
+}
+
+/* タグ見た目 */
+.tag span,
+.tag {
+    display: inline-block;
+    padding: 8px 14px;
+    border: 1px solid #f88;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #f88;
+    background-color: #fff;
+    transition: all 0.2s;
+}
+
+/* ホバー時 */
+.tag:hover span,
+.tag:hover {
+    background-color: #fff5f5;
+}
+
+/* 選択されたときの見た目（input直後のspanに反応） */
+.tag input:checked + span {
+    background-color: #f66;
+    border-color: #f66;
+    color: #fff;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
