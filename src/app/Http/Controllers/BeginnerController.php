@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\DB;
 use App\Models\Comment;
 use App\Http\Requests\RegisterRequest;
 use App\Http\Requests\LoginRequest;
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
 
 class BeginnerController extends Controller
 {
@@ -135,7 +137,19 @@ class BeginnerController extends Controller
     public function register(RegisterRequest $request)
     {
         $validated = $request->validated();
-        // 登録処理
+
+        // ユーザー作成
+        $user = User::create([
+            'name' => $validated['name'],
+            'email' => $validated['email'],
+            'password' => Hash::make($validated['password']),
+        ]);
+
+        // 登録後に自動ログイン
+        Auth::login($user);
+
+        // トップページへリダイレクト
+        return redirect()->route('index')->with('success', '登録が完了しました！');
     }
 
     public function login(LoginRequest $request)
