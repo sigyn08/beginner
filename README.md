@@ -18,3 +18,7 @@
 <h2>開発環境</h2>
 <h4>トップ画面：http://localhost/</h4>
 <h4>phpMyAdmin：http://localhost:8080/index.php</h4>
+<h2>ダミーアカウント</h2>
+<h4>name:テストユーザー</h4>
+<h4>email:test@example.com</h4>
+<h4>password:password</h4>
